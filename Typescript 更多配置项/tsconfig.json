@@ -1,0 +1,89 @@
+{
+  /* 
+   *  "include" 用来指定哪些 ts 文件需要被编译
+   *  注: 写路径时, 一个 * 表示的是任意文件, ** 表示的是任意目录
+   *  
+   *  "exclude" 不需要被编译的文件目录
+   *      默认值: ["node_modules", "bower-components", "jspm_packages"]
+   *
+   */
+  "include": [
+    "./src/**/*"
+  ],
+
+  // 可选, 可以不设置
+  "exclude": [
+    "./src/index/**/*"
+  ],
+
+  /*
+   * compilerOptions 编译器的选项
+   *
+   */
+
+  "compilerOptions": {
+
+    // target 用来指定 ts 被编译为的 ES 的版本
+    "target": "es5",                                /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    
+
+    // module 指定要使用的模块化的规范
+    "module": "es6",                           /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    
+    
+    // 用来指定项目中要使用的库, 在浏览器端, 默认是浏览器的运行情况, 所以不设置
+    // "lib": [],                                   /* Specify library files to be included in the compilation. */
+    
+    
+
+    // 是否对 js 文件进行编译, 默认是 false
+    "allowJs": false,                             /* Allow javascript files to be compiled. */
+   
+   
+    // 检查 js 代码是否符合语法规范, 默认是 false
+    "checkJs": true,                             /* Report errors in .js files. */
+    
+  
+    
+    // outFile 将代码合并为一个文件
+    // 设置 outFile 后, 所有的全局作用域中的代码会合并到同一个文件中
+    // "outFile": "./dist/app.js",                             /* Concatenate and emit output to single file. */
+    
+    
+    // outDir 用来指定编译后文件所在的目录
+    "outDir": "./dist",                              /* Redirect output structure to the directory. */
+
+
+    /* Strict Type-Checking Options */
+    // 所有严格检查的总开关, 默认 false, 如果开启, 则其他的检查也会被开启, 不需要一项一项开启 
+    "strict": false,                                 /* Enable all strict type-checking options. */
+      
+
+    // 是否移除注释, 默认 false
+    "removeComments": true,                      /* Do not emit comments to output. */
+   
+   
+    // 不生成编译后的文件, 默认 false
+    "noEmit": false,                              /* Do not emit outputs. */
+    
+    
+    // 当有错误时不生成编译后的文件, 默认 false
+    "noEmitOnError": true,
+    
+
+    // 用来设置编译后的文件是否使用严格模式, 默认 false
+    "alwaysStrict": true,                        /* Parse in strict mode and emit "use strict" for each source file. */
+
+     
+    // 不允许隐式的 any 类型
+    "noImplicitAny": true,                       /* Raise error on expressions and declarations with an implied 'any' type. */
+    
+
+    // 严格的检查空值
+    "strictNullChecks": true,                    /* Enable strict null checks. */
+    
+    
+    // 不允许不明确类型的 this
+    "noImplicitThis": true,                      /* Raise error on 'this' expressions with an implied 'any' type. */
+}
+}

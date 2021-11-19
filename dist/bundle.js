@@ -1,0 +1,1 @@
+!function(){"use strict";var o,e={575:function(o,e){Object.defineProperty(e,"__esModule",{value:!0}),e.hi=void 0,e.hi="你好"}},r={};o=function o(t){var i=r[t];if(void 0!==i)return i.exports;var n=r[t]={exports:{}};return e[t](n,n.exports,o),n.exports}(575),console.log(10),console.log(o.hi)}();
